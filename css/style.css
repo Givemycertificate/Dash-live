@@ -1,12 +1,8 @@
 body {
   overflow-x: hidden;
 }
-.box {
-  height: 100vh;
-}
-.image-box {
-  height: 95vh;
-}
+
+
 .col-md-9 .container img {
   height: 100%;
 }
@@ -14,6 +10,7 @@ body {
 figure.col-md-12.padder {
   display: flex;
   justify-content: center;
+  width: 60vw;
   min-height: 100% !important;
 }
 img.img-fluid.image-certificate {
@@ -56,7 +53,12 @@ img.img-fluid.image-certificate {
     height: 45vh;
     padding-top: 2em !important;
   }
- 
+  figure.col-md-12.padder{
+    width: 100%;
+  }
+  .topper {
+    min-height: 9vh !important;
+}
   
   .buttons {
     display: block !important;
@@ -74,6 +76,16 @@ img.img-fluid.image-certificate {
   p.lead.text-center.text-muted.pt-2 {
     font-size: 1em;
   }
+}
+@media (min-width:768px){
+  .humb{
+
+  }
+  .modal-body {
+    /* padding-left: 4px; */
+    padding:0 !important;
+    height:;
+}
 }
 @media (min-width: 429px) {
   .download {

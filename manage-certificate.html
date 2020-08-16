@@ -84,9 +84,14 @@ body{
   padding:1rem !important;
 
 }
+
 .gg{
   color: white;
   font-size: 1.1em;
+}
+.download-text{
+  font-size: 1.5vw;
+  text-align: justify;
 }
 .gg:hover{
   color: #f1e5e5 !important;
@@ -99,14 +104,15 @@ body{
 }
 
 @media(max-width:476px){
-  .modal-body {
-    height: 700px;
-}
+
 .boxi{
   display: block;
 }
 .modal-body{
   padding: 0 !important;
+}
+.separator{
+  padding:0 !important
 }
 
 
@@ -366,13 +372,13 @@ body{
                     <div class="modal-body">
                       <div class="container-fluid">
                           <div class="row">
-                              <div class="col-md-12">
+                              <div class="col-md-12 separator">
                                 <div id="mdb-lightbox-ui"></div>
                         
                                 <div class="mdb-lightbox">
                                   <div class="container-fluid box">
                                     <div class="row image-box">
-                                      <div class="container col-md-9 align-self-center humb">
+                                      <div class="container col-12 col-sm-12 col-md-8 col-lg-8 align-self-center humb">
                                         <figure class="col-md-12 padder  ">
                                           <a
                                             href="img/Corona Warrior.webp"
@@ -387,11 +393,13 @@ body{
                                             />
                                           </a>
                                         </figure>
+                                        
                                       </div>
-                                      <div class="col-md-3 side">
-                                        <div class="container">
+                                    
+                                        <div class="container col-12 col-sm-12 col-md-4 col-lg-4">
                                           <!-- Section: Block Content -->
-                                          <section>
+                                          
+                                        
                                             <!-- Modal -->
                                             <div
                                               class="modal fade"
@@ -422,58 +430,37 @@ body{
                                             </div>
                                             <div class=" mt-3">
                                             
-                                              <p class="lead text-center text-muted pt-2 ">
+                                              <p class="lead text-center download-text text-muted pt-2 ">
                                                 Share your Corona Warrior certificate with pride and
                                                 lead the way for others
                                               </p>
-                                              
-                                              <div class=" text-center mb-3">
-                                                  <div class="card">
-                                                      <div class="card-header card-header-tabs card-header-rose hu">
-                                                        <div class="boxi">
-                                                         
-                                                              <a class="nav-link gg" href="#settings" data-toggle="tab">
-                                                                  <i class="fa fa-file-text" aria-hidden="true"></i> Create New
-                                                                <div class="ripple-container"></div>
-                                                              </a>
-                                                              <a class="nav-link gg" href="#settings" data-toggle="tab">
-                                                                  <i class="fa fa-download" aria-hidden="true"></i> Download
-                                                                  <div class="ripple-container"></div>
-                                                                </a>
-                                                              </div>
-                                                           
-                                                      </div>
-                                                      <div class="card-body">
-                                                          <div class="tab-content">
-                                                            <div class="tab-pane active" id="profile">
-                                                                <a
-                                                                type="button"
-                                                                class="btn-floating btn-success btn-sm"
-                                                              >
-                                                                <i class="fab fa-whatsapp"></i>
-                                                              </a>
-                                                              <a type="button" class="btn-floating btn-fb btn-sm">
-                                                                <i class="fab fa-facebook-f"></i>
-                                                              </a>
-                                                              <a type="button" class="btn-floating btn-tw btn-sm">
-                                                                <i class="fab fa-twitter"></i>
-                                                              </a>
-                                                              <a type="button" class="btn-floating btn-li btn-sm">
-                                                                <i class="fab fa-linkedin-in"></i>
-                                                              </a>
-                                                              
-                                                            </div>
-                                                            </div>
-                                                      </div>
-                                                </div>
-                                             
+                                              <hr/>
+                                              <div class="container-fluid d-none d-md-block">
+                                                <embed src="./assets/img/road.svg">
                                               </div>
-                        
-                                          
-                        
-                                             
+                                              <div class="card-body d-flex flex-column flex-md-row justify-content-center">
+                                                <button class="btn btn-rose">Download Certificate</button>
+                                                <button class="btn btn-warning d-none d-md-block">Create Certificate</button>
+                                                <button class="btn btn-warning d-sm-block d-md-none">Create New Certificate</button>
+                                              </div>
+                                              <div class="card-body d-flex justify-content-center py-2">
+                                                <button class="btn btn-just-icon btn-success">
+                                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="btn btn-just-icon btn-twitter">
+                                                  <i class="fa fa-twitter"></i>
+                                                </button>
+                                                <button class="btn btn-just-icon btn-facebook">
+                                                  <i class="fa fa-facebook"> </i>
+                                                </button>
+                                                <button class="btn btn-just-icon btn-linkedin">
+                                                  <i class="fa fa-linkedin"></i>
+                                                </button>
+
+                                              </div>
                                             </div>
-                                          </section>
+                                            
+                                         
                                           <!-- Section: Block Content -->
                                         </div>
                                       </div>
@@ -489,9 +476,8 @@ body{
             </div>
         </div>
     </div>
-      <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container-fluid">
-       
           <div class="copyright float-right">
             &copy;
             <script>
@@ -499,8 +485,8 @@ body{
             </script> Give My Certificate<a href="https://www.givemycertificate.com" target="_blank"> Terms Privacy Policy</a> All right reserved.
           </div>
           </div>
-        </div>
       </footer>
+      --> 
     </div>
   </div>
   <!--   Core JS Files   -->
