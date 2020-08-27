@@ -2,7 +2,6 @@ body {
   overflow-x: hidden;
 }
 
-
 .col-md-9 .container img {
   height: 100%;
 }
@@ -53,13 +52,13 @@ img.img-fluid.image-certificate {
     height: 45vh;
     padding-top: 2em !important;
   }
-  figure.col-md-12.padder{
+  figure.col-md-12.padder {
     width: 100%;
   }
   .topper {
     min-height: 9vh !important;
-}
-  
+  }
+
   .buttons {
     display: block !important;
     text-align: center;
@@ -77,15 +76,14 @@ img.img-fluid.image-certificate {
     font-size: 1em;
   }
 }
-@media (min-width:768px){
-  .humb{
-
+@media (min-width: 768px) {
+  .humb {
   }
   .modal-body {
     /* padding-left: 4px; */
-    padding:0 !important;
-    height:;
-}
+    padding: 0 !important;
+    height: ;
+  }
 }
 @media (min-width: 429px) {
   .download {

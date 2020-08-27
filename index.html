@@ -11,7 +11,8 @@
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
@@ -19,6 +20,7 @@
   <link href="assets/demo/demo.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 </head>
+
 <body class="off-canvas-sidebar">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top text-white">
@@ -26,7 +28,8 @@
       <div class="navbar-wrapper">
         <a class="navbar-brand" href="javascript:;">Login Page</a>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
         <span class="navbar-toggler-icon icon-bar"></span>
         <span class="navbar-toggler-icon icon-bar"></span>
@@ -52,7 +55,8 @@
   </nav>
   <!-- End Navbar -->
   <div class="wrapper wrapper-full-page">
-    <div class="page-header login-page header-filter" filter-color="black" style="background-image: url('assets/img/login.jpg'); background-size: cover; background-position: top center;">
+    <div class="page-header login-page header-filter" filter-color="black"
+      style="background-image: url('assets/img/login.jpg'); background-size: cover; background-position: top center;">
       <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
       <div class="container">
         <div class="row">
@@ -65,7 +69,7 @@
                     <!--<a href="#pablo" class="btn btn-just-icon btn-link btn-white">
                       <i class="fa fa-facebook-square"></i>
                     </a>-->
-                   <!-- <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                    <!-- <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
                       <i class="fa fa-twitter"></i>
                     </a>-->
                     <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
@@ -75,7 +79,7 @@
                 </div>
                 <div class="card-body ">
                   <p class="card-description text-center">Single Click Login</p>
-                  
+
                   <span class="bmd-form-group">
                     <div class="input-group">
                       <div class="input-group-prepend">
@@ -111,7 +115,8 @@
             &copy;
             <script>
               document.write(new Date().getFullYear())
-            </script> Give My Certificate<a href="https://www.givemycertificate.com" target="_blank"> Terms Privacy Policy</a> All right reserved.
+            </script> Give My Certificate<a href="https://www.givemycertificate.com" target="_blank"> Terms Privacy
+              Policy</a> All right reserved.
           </div>
         </div>
       </footer>
@@ -133,8 +138,8 @@
   <!-- Material Dashboard DEMO methods, don't include it in your project! -->
   <script src="assets/demo/demo.js"></script>
   <script>
-    $(document).ready(function() {
-      $().ready(function() {
+    $(document).ready(function () {
+      $().ready(function () {
         $sidebar = $('.sidebar');
 
         $sidebar_img_container = $sidebar.find('.sidebar-background');
@@ -154,7 +159,7 @@
 
         }
 
-        $('.fixed-plugin a').click(function(event) {
+        $('.fixed-plugin a').click(function (event) {
           // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
           if ($(this).hasClass('switch-trigger')) {
             if (event.stopPropagation) {
@@ -165,7 +170,7 @@
           }
         });
 
-        $('.fixed-plugin .active-color span').click(function() {
+        $('.fixed-plugin .active-color span').click(function () {
           $full_page_background = $('.full-page-background');
 
           $(this).siblings().removeClass('active');
@@ -186,7 +191,7 @@
           }
         });
 
-        $('.fixed-plugin .background-color .badge').click(function() {
+        $('.fixed-plugin .background-color .badge').click(function () {
           $(this).siblings().removeClass('active');
           $(this).addClass('active');
 
@@ -197,7 +202,7 @@
           }
         });
 
-        $('.fixed-plugin .img-holder').click(function() {
+        $('.fixed-plugin .img-holder').click(function () {
           $full_page_background = $('.full-page-background');
 
           $(this).parent('li').siblings().removeClass('active');
@@ -207,7 +212,7 @@
           var new_image = $(this).find("img").attr('src');
 
           if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-            $sidebar_img_container.fadeOut('fast', function() {
+            $sidebar_img_container.fadeOut('fast', function () {
               $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
               $sidebar_img_container.fadeIn('fast');
             });
@@ -216,7 +221,7 @@
           if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
             var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
 
-            $full_page_background.fadeOut('fast', function() {
+            $full_page_background.fadeOut('fast', function () {
               $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
               $full_page_background.fadeIn('fast');
             });
@@ -235,7 +240,7 @@
           }
         });
 
-        $('.switch-sidebar-image input').change(function() {
+        $('.switch-sidebar-image input').change(function () {
           $full_page_background = $('.full-page-background');
 
           $input = $(this);
@@ -267,7 +272,7 @@
           }
         });
 
-        $('.switch-sidebar-mini input').change(function() {
+        $('.switch-sidebar-mini input').change(function () {
           $body = $('body');
 
           $input = $(this);
@@ -282,7 +287,7 @@
 
             $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
 
-            setTimeout(function() {
+            setTimeout(function () {
               $('body').addClass('sidebar-mini');
 
               md.misc.sidebar_mini_active = true;
@@ -290,12 +295,12 @@
           }
 
           // we simulate the window Resize so the charts will get updated in realtime.
-          var simulateWindowResize = setInterval(function() {
+          var simulateWindowResize = setInterval(function () {
             window.dispatchEvent(new Event('resize'));
           }, 180);
 
           // we stop the simulation of Window Resize after the animations are completed
-          setTimeout(function() {
+          setTimeout(function () {
             clearInterval(simulateWindowResize);
           }, 1000);
 
@@ -303,19 +308,19 @@
       });
     });
   </script>
-      <!-- MDB core JavaScript -->
-      <script type="text/javascript" src="modal/js/mdb.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-     <!-- Your custom scripts (optional) -->
-     <script type="text/javascript">
-       $(function() {
-         $("#mdb-lightbox-ui").load("modal/mdb-addons/mdb-lightbox-ui.html");
-       });
-     </script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="modal/js/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript">
+    $(function () {
+      $("#mdb-lightbox-ui").load("modal/mdb-addons/mdb-lightbox-ui.html");
+    });
+  </script>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       md.checkFullPageBackgroundImage();
-      setTimeout(function() {
+      setTimeout(function () {
         // after 1000 ms we add the class animated to the login/register card
         $('.card').removeClass('card-hidden');
       }, 700);
