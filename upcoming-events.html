@@ -980,6 +980,14 @@ The above copyright notice and this permission notice shall be included in all c
           $('#conferences').addClass('active show');
 
         });
+        $('.workshop').click(function (event) {
+          // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+          $('#activity').removeClass('active show');
+          $('#hackathon').removeClass('active show');
+          $('#workshop').addClass('active show');
+          $('#conferences').removeClass('active show');
+
+        });
         $('.activity').click(function (event) {
           // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
           $('#activity').addClass('active show');
